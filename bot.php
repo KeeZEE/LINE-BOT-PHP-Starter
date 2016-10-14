@@ -53,56 +53,62 @@ if (!is_null($events['events'])) {
 }
 
 function return_message($message){
+
+    $text = 'ขอโทดนะครับ ขณะนี้ค้นหาได้เเต่ยี่ห้อมอเตอร์ไซค์มือสอง เช่น honda bmw suzuki หรือเข้ามาดูได้ใน https://www.smokybike.com นะครับ :)';
+
+    if (strpos($message, 'สวัสดี') || strpos($message, 'มิน') || strpos($message, 'คับ') || strpos($message, 'ค่ะ')){
+        $text = 'สวัสดีคับ เราคือ Bot Smokybike.com ยินดีรับใช้คับ';
+    }
+
     if (strpos($message, 'honda') || strpos($message, 'ฮอนด้า')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Honda';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Honda';
     }
 
     if (strpos($message, 'bmw') || strpos($message, 'บีเอ็ม')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/bmw';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/bmw';
     }
 
     if (strpos($message, 'ktm') || strpos($message, 'เคที')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/KTM';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/KTM';
     }
 
     if (strpos($message, 'kawasaki') || strpos($message, 'คาวา')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/kawasaki';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/kawasaki';
     }
 
     if (strpos($message, 'ducati') || strpos($message, 'ดูคา')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/ducati';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/ducati';
     }
 
     if (strpos($message, 'suzuki') || strpos($message, 'ซูซู')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Suzuki';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Suzuki';
     }
 
     if (strpos($message, 'yamaha') || strpos($message, 'ยามา')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/yamaha';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/yamaha';
     }
 
     if (strpos($message, 'benelli') || strpos($message, 'เบเนล')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/benelli';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/benelli';
     }
 
     if (strpos($message, 'gpx') || strpos($message, 'จีพี')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/yamaha';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/yamaha';
     }
 
     if (strpos($message, 'triumph') || strpos($message, 'ไทรอัม')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=16&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=16&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
     }
 
     if (strpos($message, 'harley') || strpos($message, 'ฮาร์')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=5&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=5&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
     }
 
     if (strpos($message, 'stallion') || strpos($message, 'สตา')){
-        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=14&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
+        $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=14&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
     }
 
-    return 'ขอโทดนะคับ ขณะนี้ค้นหาได้เเต่ยี่ห้อ มอเตอร์ไซค์มือสอง หรือเข้ามาดูได้ใน https://www.smokybike.com นะคับ :)';
-
+    return $text;
 }
 
 echo "OK";
