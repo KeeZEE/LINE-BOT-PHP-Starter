@@ -54,7 +54,7 @@ if (!is_null($events['events'])) {
 
 function return_message($message){
 
-    $text = 'ขอโทดนะครับ ขณะนี้ค้นหาได้เเต่ยี่ห้อมอเตอร์ไซค์มือสอง เช่น honda bmw suzuki หรือเข้ามาดูได้ใน https://www.smokybike.com นะครับ :)';
+    $text = '**ขออภัยครับ คำค้นของคุณไม่ตรงกับยี่ห้อใดๆ โดยขณะนี้คุณสามารถค้นหามอเตอร์ไซค์มือสอง ได้จากลิงก์ https://www.smokybike.com นะครับ :)';
 
     if (strpos($message, 'สวัสดี') || strpos($message, 'มิน') || strpos($message, 'คับ') || strpos($message, 'ค่ะ')){
         $text = 'สวัสดีคับ เราคือ Bot Smokybike.com ยินดีรับใช้คับ';
