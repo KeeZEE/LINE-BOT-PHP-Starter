@@ -56,55 +56,55 @@ function return_message($message){
 
     $text = '**ขออภัยครับ คำค้นของคุณไม่ตรงกับยี่ห้อใดๆ โดยขณะนี้คุณสามารถค้นหามอเตอร์ไซค์มือสอง ได้จากลิงก์ https://www.smokybike.com นะครับ :)';
 
-    if (strpos($message, 'สวัสดี') || strpos($message, 'มิน') || strpos($message, 'คับ') || strpos($message, 'ค่ะ')){
+    if (strpos($message, 'สวัสดี') !== false || strpos($message, 'มิน') !== false ){
         $text = 'สวัสดีคับ เราคือ Bot Smokybike.com ยินดีรับใช้คับ';
     }
 
-    if (strpos($message, 'honda') || strpos($message, 'ฮอนด้า')){
+    if (strpos($message, 'honda')!== false || strpos($message, 'ฮอนด้า') !== false ){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Honda';
     }
 
-    if (strpos($message, 'bmw') || strpos($message, 'บีเอ็ม')){
+    if (strpos($message, 'bmw') !== false || strpos($message, 'บีเอ็ม') !== false ){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/bmw';
     }
 
-    if (strpos($message, 'ktm') || strpos($message, 'เคที')){
+    if (strpos($message, 'ktm') !== false || strpos($message, 'เคที') !== false ){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/KTM';
     }
 
-    if (strpos($message, 'kawasaki') || strpos($message, 'คาวา')){
+    if (strpos($message, 'kawasaki') !== false || strpos($message, 'คาวา') !== false ){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/kawasaki';
     }
 
-    if (strpos($message, 'ducati') || strpos($message, 'ดูคา')){
+    if (strpos($message, 'ducati') !== false || strpos($message, 'ดูคา') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/ducati';
     }
 
-    if (strpos($message, 'suzuki') || strpos($message, 'ซูซู')){
+    if (strpos($message, 'suzuki') !== false || strpos($message, 'ซูซู') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Suzuki';
     }
 
-    if (strpos($message, 'yamaha') || strpos($message, 'ยามา')){
+    if (strpos($message, 'yamaha') !== false || strpos($message, 'ยามา') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/yamaha';
     }
 
-    if (strpos($message, 'benelli') || strpos($message, 'เบเนล')){
+    if (strpos($message, 'benelli') !== false || strpos($message, 'เบเนล') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/benelli';
     }
 
-    if (strpos($message, 'gpx') || strpos($message, 'จีพี')){
+    if (strpos($message, 'gpx') !== false || strpos($message, 'จีพี') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/yamaha';
     }
 
-    if (strpos($message, 'triumph') || strpos($message, 'ไทรอัม')){
+    if (strpos($message, 'triumph') !== false || strpos($message, 'ไทรอัม') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=16&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
     }
 
-    if (strpos($message, 'harley') || strpos($message, 'ฮาร์')){
+    if (strpos($message, 'harley') !== false || strpos($message, 'ฮาร์') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=5&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
     }
 
-    if (strpos($message, 'stallion') || strpos($message, 'สตา')){
+    if (strpos($message, 'stallion') !== false || strpos($message, 'สตา') !== false){
         $text = 'มีครับ !! เข้ามาที่ https://www.smokybike.com/?search%5Bmake_id%5D=14&search%5Bmodel_id%5D=&search%5Blocation_id%5D=&search%5Bprice_range%5D=0%3B2000000';
     }
 
