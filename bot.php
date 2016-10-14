@@ -18,6 +18,8 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
+            $text = return_message($text);
+
             // Build message to reply back
             $messages = [
                 'type' => 'text',
@@ -26,6 +28,7 @@ if (!is_null($events['events'])) {
 
             // Make a POST Request to Messaging API to reply to sender
             $url = 'https://api.line.me/v2/bot/message/reply';
+
             $data = [
                 'replyToken' => $replyToken,
                 'messages' => [$messages],
@@ -48,4 +51,11 @@ if (!is_null($events['events'])) {
         }
     }
 }
+
+function return_message($message){
+    if (strpos($message, 'honda') || strpos($message, 'ฮอนด้า') !== false){
+        return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Honda';
+    }
+}
+
 echo "OK";
