@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
-            $text = return_message($text);
+            $text = return_message(strtolower($text));
 
             // Build message to reply back
             $messages = [
@@ -54,7 +54,7 @@ if (!is_null($events['events'])) {
 
 function return_message($message){
 
-    $text = '**ขออภัยครับ คำค้นของคุณไม่ตรงกับยี่ห้อใดๆ โดยขณะนี้คุณสามารถค้นหามอเตอร์ไซค์มือสอง ได้จากลิงก์ https://www.smokybike.com นะครับ :)';
+    $text = 'หากคุณกำลังมองหามอร์เตอร์ไซค์มือสอง สามารถทำการค้นหาได้จากลิงก์ https://www.smokybike.com ได้เลยนะครับ';
 
     if (strpos($message, 'สวัสดี') !== false || strpos($message, 'มิน') !== false ){
         $text = 'สวัสดีคับ เราคือ Bot Smokybike.com ยินดีรับใช้คับ';
