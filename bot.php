@@ -53,9 +53,14 @@ if (!is_null($events['events'])) {
 }
 
 function return_message($message){
-    if (strpos($message, 'honda') || strpos($message, 'ฮอนด้า') !== false){
+    if (strpos($message, 'honda') || strpos($message, 'ฮอนด้า')){
         return 'มีครับ !! เข้ามาที่ https://www.smokybike.com/มอเตอร์ไซค์มือสอง/Honda';
     }
+
+    if(strpos($message, 'เเอต')){
+        return 'หล่อสัดๆ';
+    }
+
 }
 
 echo "OK";
